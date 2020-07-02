@@ -1,0 +1,113 @@
+.footer{
+  bottom: 0px;
+  left: 0;
+  background-color: rgb(84, 85, 82);
+  display: grid;
+  color: white;
+}
+
+.footer .left{
+  width: 47%;
+  float: left;
+}
+
+.footer .right{
+  width: 47%;
+  float: right;
+}
+
+/* .left{
+  padding-right: 50px;
+}
+
+.right{
+  padding-left: 50px;
+} */
+
+.left h3,.left p{
+  text-align: right;
+}
+
+.right h3{
+  text-align: left;
+}
+
+.sosmed{
+  display: inline-flex;
+  margin-bottom: 30px;
+}
+
+.sosmed .icon{
+  padding-right: 10px;
+}
+
+.icon .tooltip{
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.ig:hover{
+  cursor: pointer;
+}
+
+.telp:hover{
+  cursor: pointer;
+}
+
+.youtube:hover{
+  cursor: pointer;
+}
+
+.ig:hover #ig{
+  visibility: visible;
+}
+
+.telp:hover #telp{
+  visibility: visible;
+}
+
+.youtube:hover #youtube{
+  visibility: visible;
+}
+
+.hr-right, .hr-left{
+  display: flex;
+  width: 100%;
+  height: 8px;
+  margin: 5px 0px 15px 0px;
+}
+
+.hr-right{
+  justify-content: flex-end;
+}
+
+.hr-item {
+  height: 8px;
+  margin: 0;
+  flex-grow: 1;
+  transition: all .8s ease-in-out;
+  cursor: pointer;
+}
+
+.long{
+  max-width: 100px;
+  background-color: yellowgreen;
+}
+
+.short{
+  max-width: 30px;
+  background-color: yellow;
+}
+
+.bottom{
+  text-align: center;
+}
