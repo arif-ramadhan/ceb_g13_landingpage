@@ -1,0 +1,29 @@
+.header-search {
+   float: right;
+   font-size: 36px;
+   padding: 20px 40px;
+}
+
+
+.header {
+  background-color: #F1F1F1;
+  height: 100px;
+  /*text-align: center;*/
+}
+
+.header li {
+  list-style: none;
+  float: left;
+  padding: 23px 20px;
+  
+}
+
+.header-logo{
+    margin: 0 auto;
+    width: 100px;
+    text-align:center;
+}
+
+.header-list{
+  float:left;
+}
