@@ -83,6 +83,181 @@ header {
     border:2px solid #008080;
 }
 
+/* corousel */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: calibri light;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+}
+/* Header */
+header .container {
+  width: 100%;
+  height: 60px;
+}
+/* Main */
+
+/* Banner/carousel */
+main .banner {
+  width: 100%;
+  height: 500px;
+  background-image: url(/asset/img/il-vagabiondo-8eNt0CQamB0-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
+  text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.8);
+  padding-top: 10px;
+}
+main .banner .brand{
+  text-align: center;
+  font-size: 22px;
+  margin-top: 0px;
+}
+main .middle {
+  margin-bottom: -20px;
+  margin-top: 0px;
+  margin-left: 300px;
+}
+main .middle .middles {
+float: left;
+display: block;
+margin: 20px;
+}
+main .middle .middles img {
+  height: 300px;
+  border-radius: 20px;
+  width: 200px;
+}
+main .middle .middles:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+main .middle .middles p {
+  font-size: 24px;
+  text-align: center;
+}
+main .btn-pesan {
+background-color:whitesmoke;
+border: none;
+margin-left: 42%;
+padding: 10px;
+width: 15%;
+font-weight: bold;
+font-size: 18px;
+border-radius: 18px;
+}
+.btn-pesan:hover{
+  background-color:goldenrod;
+  transition: 0.3s;
+  box-shadow: 0px 0px 5px 5px rgba(250, 248, 248, 0.8);
+  color: white;
+}
+.btn-pesan:active{
+  background-color:whitesmoke;
+  color: black;
+}
+/* end Banner/carousel */
+
+/* end Main */
+
+
+/* nabil */
+    
+/* * {
+margin: 0;
+padding: 0;
+}
+body {
+background-color: grey;
+font: normal 13px/1.5;
+font-family: 'Roboto Condensed', sans-serif;
+color: #333;
+} */
+.atas {
+width: 705px;
+margin: 20px auto;
+padding: 20px;
+}
+h1 {
+display: inline-block;
+background-color: #fff;
+color: gray;
+font-size: 16px;
+font-weight: normal;
+text-transform: uppercase;
+padding: 4px 20px;
+float: left;
+border-radius: 50px;
+margin-left: 200px;
+}
+    
+.clear {
+clear: both;
+}
+.items {
+display: block;
+margin: 20px 0;
+}
+.item {
+background-color: #fff;
+float: left;
+margin: 0 11px 10px 10px;
+width: auto;
+padding: 10px;
+height: auto;
+ 
+}
+.item img {
+display: block;
+margin: auto;
+transition: transform .2s;
+}
+
+.item img:hover{
+transform: scale(1.5);
+}
+h2 {
+font-size: 12px;
+display: block;
+border-bottom: 1px solid #ccc;
+margin: 0 0 10px 0;
+padding: 0 0 5px 0;
+}
+button {
+border: 1px solid gray;
+padding: 4px 14px;
+background-color: gray;
+color: #fff;
+text-transform: uppercase;
+float: right;
+margin: 5px 0;
+font-weight: 400;
+cursor: pointer;
+font-family: 'Roboto Condensed', sans-serif;
+border-radius: 50px;
+
+}
+button:focus{
+outline: none !important;
+}
+span {
+float: right;
+}
+    
+p{
+font-size: 14px;
+}
+.tujuan-wisata {
+display: inline-block;
+background: url(cart.png) no-repeat 0 0;
+width: 30px;
+height: 30px;
+position: fixed;
+}
+
 
 /* main */
 main{
@@ -99,6 +274,7 @@ main{
 }
 
 #content{
+  padding-top: 20px;
   width:100%;
 
 }
@@ -166,6 +342,7 @@ height: 30%;
   background-color: rgb(84, 85, 82);
   display: grid;
   color: white;
+  padding: 20px 0px;
 }
 
 .footer .left{
@@ -273,3 +450,27 @@ height: 30%;
 .bottom{
   text-align: center;
 }
+
+/* Tablet */
+@media screen and (max-width:1000px){
+  main .middle {
+      margin-left: 70px;
+  }
+  main .middle .middles img {
+      height: 250px;
+      width: 160px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width:670px){
+  main .middle {
+      margin-left: 70px;
+  }
+  main .middle .middles img {
+      height: 120px;
+      width: 120px;
+  }
+  main .btn-pesan {
+      width: auto;
+  }
