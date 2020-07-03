@@ -19,8 +19,8 @@ header {
  
 }
 .logo{
-  width: 50px;
-  margin-left:  300px;
+  width: 57px;
+  margin-left:  203px;
 }
 .header-kiri{
   float: left;
@@ -28,8 +28,7 @@ header {
 
 .header-kanan{
   float: right;
-  padding-top: 18px;
-  margin-right: 100px;
+  padding-top: 13px;
 }
 
 .topnav {
@@ -42,7 +41,7 @@ header {
   display: block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 21px 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -50,16 +49,16 @@ header {
   background-color: #ddd;
   color: white;
 }
-}
 
-.header-kanan input[type=text] {
+
+/*.header-kanan input[type=text] {
   float: right;
   padding: 6px;
   border: none;
   margin-top: 8px;
   margin-right: 16px;
   font-size: 17px;
-}
+}*/
 @media screen and (max-width: 671px) {
   .header-kiri a, .header-kiri input[type=text] {
     float: none;
@@ -76,4 +75,10 @@ header {
 
 .main {
     height: 3000px;
+}
+
+.search {
+    padding:8px 15px; 
+    background: #f0f8ff; 
+    border:2px solid #008080;
 }
