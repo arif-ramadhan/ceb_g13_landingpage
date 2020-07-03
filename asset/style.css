@@ -90,8 +90,8 @@ header {
   font-family: calibri light;
   box-sizing: border-box;
 }
-body {
-  background-color: black;
+.banner {
+  /* background-color: black; */
   color: white;
 }
 /* Header */
