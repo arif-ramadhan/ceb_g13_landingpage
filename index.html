@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,103 @@
     <link rel="stylesheet" href="asset/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-   <div class="footer">
-       <div class="top">
+    <main>
+        <div id="content">
+            <div class="card">
+                <h2 style="color:white; text-align:center;">FaQ</h2>
+                <button class="accordion">Cara memesan?</button>
+                <div class="panel">
+                    <p style="text-align:center;">Guest dapat memilih tempat wisata yang tersedia</p>
+                </div>
+
+                <button class="accordion">Apa saja layanan nya?</button>
+                <div class="panel">
+                    <p style="text-align:center;">Hanya pemesanan tempat wisata</p>
+                </div>
+                <button class="accordion">Bagaimana cara menghubungi ?</button>
+                <div class="panel">
+                    <p style="text-align:center;">silahkan contact pada bagan di bawah</p>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+
+        </div>
+        <h2 style="color:white; text-align:center;">Our Teams</h2>
+        <hr style="width:100px; text-align:center;">
+        <div class="posisi">
+            <aside class="">
+                <article class="profile-card">
+
+                    <h3>Hacker</h3>
+                    <img src="foto1.png" width="150px" height="150px">
+                    <div class="tabelku">
+                        <h4>Arif Ramadhan</h4>
+                        <b style="font-size:10px; font-family:monospace;">Mengerjakan Footer</b>
+                    </div>
+
+                </article>
+
+            </aside>
+        </div>
+        <!--- -->
+        <div class="posisi">
+            <asside class="">
+                <article class="profile-card">
+
+                    <h3>Hacker</h3>
+                    <img src="foto2.png" width="150px" height="150px">
+                    <tr>
+                        <h4>M Rizky Rahmattullah</h4>
+                        <b style="font-size:10px; font-family:monospace;">Mengerjakan Header</b>
+
+                </article>
+                </aside>
+        </div>
+        <!-- -->
+        <div class="posisi">
+            <asside class="">
+                <article class="profile-card">
+
+                    <h3>Hustler</h3>
+                    <img src="foto3.png" width="150px" height="150px">
+                    <h4>Rudi Giyarto</h4>
+                    <b style="font-size:10px; font-family:monospace;">Mengerjakan banner/caurosel</b>
+
+                </article>
+                </aside>
+        </div>
+        <!-- -->
+        <div class="posisi">
+            <asside class="">
+                <article class="profile-card">
+
+                    <h3>Hacker</h3>
+                    <img src="foto4.png" width="150px" height="150px">
+                    <h4>Muhammad Nabil</h4>
+                    <b style="font-size:10px; font-family:monospace;">Mengerjakan destinasi Wisata</b>
+
+                </article>
+                </aside>
+        </div>
+        <!-- -->
+        <div class="posisi">
+            <asside class="">
+                <article class="profile-card">
+
+                    <h3>Hipster</h3>
+                    <img src="foto5.png" width="150px" height="150px">
+                    <h4>M Abby Rafdisyah</h4>
+                    <b style="font-size:10px; font-family:monospace;">Mengerjakan FaQ & Nama Tim</b>
+
+                </article>
+                </aside>
+        </div>
+    </main>
+    <div class="footer">
+        <div class="top">
             <div class="left">
                 <h3>WisataKu</h3>
                 <div class="hr-right">
@@ -39,10 +134,27 @@
                     </div>
                 </div>
             </div>
-       </div>
-       <div class="bottom">
+        </div>
+        <div class="bottom">
             <p>Copyright by WisataKu &copy; All right reserved</p>
-       </div>
-   </div>
+        </div>
+    </div>
 </body>
+
 </html>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
